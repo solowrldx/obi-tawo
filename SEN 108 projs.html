@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            color: rgb(114, 157, 238);
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .btn {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 10px 20px;
+            background-color: #2575fc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #6a11cb;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+        }
+        .project {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .contact-form {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #2575fc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .My-projects{
+            text-align: center;
+        }
+        .My-projects p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Showcasing my work and skills</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h2>Hi, I'm a Obi Tawo, im a Web Developer</h2>
+        <p>Creating stunning websites and applications </p>
+        <a href="#projects" class="btn">About</a>
+        <a href="#contact" class="btn">Contact Me</a>
+        <p><h2>About</h2></p>
+    </section>
+    <section id="projects" class="projects">
+        <div class="project">
+            <img src="Aassets/wpooms.jpg" alt="">
+            <h3>HTML</h3>
+            <p>The markup language is used to structure and format content.I love coding in html</p>
+        </div>
+        <div class="project">
+            <img src="Aassets/uuuu.png" alt="Project 2">
+            <h3>PYTHON</h3>
+            <p>I also love using python. It is easy to learn and use</p>
+        </div>
+        <div class="project">
+            <img src="Aassets/mens.jpg" alt="Project 3">
+            <h3>JAVA</h3>
+            <p>I also engage in coding with java</p>
+        </div>
+    </section>
+    <section id="My-project" class="My-projects">
+        <div class="My-projects">
+            <h2>My projects</h2>
+            <img src="Aassets/hals.jpg" alt="">
+            <p><b>I am currently trying to work on a password, which is one of my recent endevours. This tool allows users to guess any length <br>of passwords. I am continually exploring new ideas frameworks and tools to improve my craft, with plans to work on more <br> advanced projects, including web apps, API,s, and full stack applications</b></p>
+        </div>
+        <br>
+    </section>
+    <section id="contact" class="contact-form">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+</body>
+</html>
